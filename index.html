@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+     <head>
+           <link rel="stylesheet" href="filpkart.css"/>
+          <title>Flipkart-clone</title>
+          <link rel="icon" href="https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Emblem.png">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <script src="flipkart.js"></script>
+     </head>
+     <body id="blur">
+          
+          <nav>
+              <div class="logo_Container">
+                   <div class="logo">
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png "width="120px" height="20px">
+                  </div>    
+                   <div class="explore">
+                         <a href="https://www.flipkart.com/plus">
+                              <p>Explore <span class="plus-icon">Plus</span></p>
+                       
+                             <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" width="10px" height="10px">
+                         </a>
+                    </div>
+              </div>
+               <div class="search_container">
+                    <input type="text" placeholder="Search for Products,Brands and More">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="recent_search">
+                         <div class="recent_list">
+                              <i class="fa-solid fa-clock-rotate-left"></i>
+                              <p>laptop or PC cleaner</p>
+                         </div>
+                          <p class="discover_more">Discover More</p>
+                    
+                         <div class="recent_List_discover">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <p>Moblie</p>
+                         </div>
+                         <div class="recent_List_discover">
+                            
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <p>Shoes</p>
+                         </div>
+                         <div class="recent_List_discover">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <p>T-shirts</p>
+                         </div>
+                         <div class="recent_List_discover">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <p>laptop</p>
+                         </div>
+                         <div class="recent_List_discover">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <p>Electronics</p>
+                         </div>
+                         <div class="recent_List_discover">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <p>Toys</p>
+                         </div>
+                         <div class="recent_List_discover">
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <p>Microphones</p>
+                         </div>
+                 </div>
+             </div>
+                
+                <div class="loginBtn_container">
+                    <a href="#">Login</a>
+                    <div class="HoverLogin">
+                        <div class="triangle-up"></div>
+                        <div class="newuser">
+                             <p>New Customer ?</p>
+                             <a href="#">Sign up</a>
+                        </div>
+                        <div class="loginmenu">
+                            <div class="menulist">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <p>My Profile</p>
+                            </div>
+                            <div class="menulist">
+                                <i class="fa-sharp fa-solid fa-circle-plus"></i>
+                                <p>Flipkart plus Zone</p>
+                            </div>
+                            <div class="menulist">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <p>Orders</p>
+                            </div>
+                            <div class="menulist">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>Wishlist</p>
+                            </div>
+                            <div class="menulist">
+                                <i class="fa-solid fa-money-bill-1"></i>
+                                <p>Rewards</p>
+                            </div>
+                            <div class="menulist">
+                                <i class="fa-solid fa-gifts"></i>
+                                <p>Gift Cards</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <a  class="nav-link" href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect">
+                    Become a Seller
+
+                </a> 
+                
+                 <a href="#" class="Navlink angledown">
+                        More
+                         <i class="fa-solid fa-angle-down icon_more"></i>
+                 
+                           <div class="more_option_displaycontainer">
+                               <div class="more_option_content">
+                                    <div class="moreoption">
+                                         <i class="fa-solid fa-bell"></i>
+                                         <p>Notification Preference</p>
+                                 </div>
+                                  <div class="moreoption">
+                                       <i class="fa-solid fa-question"></i>
+                                        <p>24x7 Customer Care</p>
+                                 </div>
+                                   <div class="moreoption">
+                                        <i class="fa-sharp fa-solid fa-chart-line"></i>
+                                            <p>Advertise</p>
+                                  </div>
+                                   <div class="moreoption">
+                                       <i class="fa-solid fa-download"></i>
+                                           <p>Download</p>
+                                  </div>
+                             </div>
+                           </div>
+                 </a>
+
+
+
+                
+                  <div class="cart_link">
+                     
+                      <i  class="fa-solid fa-cart-shopping"></i>
+                      <p>Cart</p>
+                      <i class="fa-solid fa-moon" id="moon"></i> 
+                       
+                  </div>
+                  <button onclick="geolocation()" id="geolocation">GetLocation</button>
+                      <p id="out"></p>
+                      <p id="weather"></p>
+                 
+                
+                    
+                  
+                </nav>
+             <section class="topProductNavBar">
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/flap/112/112/image/29327f40e9c4d26b.png?q=100"/>
+                        <p>Grocery</p>
+                        
+                    </div>
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/flap/112/112/image/22fddf3c7da4c4f4.png?q=100"/>
+                        <p>Mobiles</p>
+                        
+                    </div>
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/112/112/image/0d75b34f7d8fbcb3.png?q=100"/>
+                        <p>Fashion</p>
+                        
+                    </div>
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/flap/112/112/image/69c6589653afdb9a.png?q=100"/>
+                        <p>Electronics</p>
+                        
+                    </div>
+                    
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/flap/112/112/image/0ff199d1bd27eb98.png?q=100"/>
+                        <p>Appliances</p>
+                        
+                    </div>
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/flap/112/112/image/71050627a56b4693.png?q=100"/>
+                        <p>Travel</p>
+                        
+                    </div>
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/flap/112/112/image/dff3f7adcf3a90c6.png?q=100"/>
+                        <p>Beauty,Toys and More</p>
+                        
+                    </div>
+                    
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/112/112/image/05d708653beff580.png?q=100"/>
+                        <p>Two Wheelers</p>
+                        
+                    </div>
+                    <div class="topProductNavBar_nav">
+                        <img src="https://rukminim1.flixcart.com/flap/112/112/image/ab7e2b022a4587dd.jpg?q=100"/>
+                        <p>Home&Furniture</p>
+                        
+                    </div>
+                </section>
+
+                <!----slider-->
+                <div class="slider">
+                     <div id="coupon">
+                        <button onClick="closeCoupon()">&times;</button>
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/1000/1540/image/ae8f9d0a6e7ae178.jpeg?q=20" alt="coupon" id="offer">
+                     </div>
+                     <div class="btn-container btn-left">
+                          <button class="btn"><i class="fa-solid fa-angle-left"></i></button>
+                     </div>
+                     <div class="slider_image">
+                        <img  class="sliderpic"src="https://rukminim1.flixcart.com/fk-p-flap/1000/170/image/01f07878e0a735b8.jpg?q=20" alt="#"/>
+                            
+                        <img  class="sliderpic" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8464e4d9a75b909a.jpg?q=20" alt="#"/>
+                        <img class="sliderpic" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/aa1b2bdcf519b468.jpg?q=20" alt="#"/>
+                        <img class="sliderpic" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/dd0caa743c184971.jpg?q=20" alt="#"/>
+                        <img class="sliderpic"  src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4529fd434a85c683.jpg?q=20"alt="#"/>
+                        <img class="sliderpic" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ed12b7707a04473c.jpg?q=20"alt="#"/>
+                        <img class="sliderpic" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4801adbcf39acbc1.jpg?q=20"alt="#"/>
+                        <img class="sliderpic" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8a89ee09acc1a9e5.jpg?q=20"alt="#"/>
+                     </div>
+                      <div class="btn-container btn-right">
+                           <button class="btn"><i class="fa-solid fa-angle-right"></i></button>
+                      </div>
+                </div>
+
+                <!--Best for electronics-->
+                <div class="bestElectronic-container">
+                    <div class="left-part">
+                        <div class="leftpart-top">
+                             <div class="leftpart-top-content">
+                                  <h1>Best of Electronics</h1>
+                             </div> 
+                              <button class="viewall_btn">View all</button>
+                        </div>
+                        <div class="left-card-container">
+                             
+                            <div class="card-product">
+                                <img src="https://rukminim1.flixcart.com/image/420/420/kah413k0/printer/k/f/g/brother-hl-l2321d-ind-original-imafsffc6q5bfym4.jpeg?q=60"/>
+                                <h3 class="card-product-name">Printers</h3>
+                                <p class="card-product-price">From Rs.10,190</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/l2jcccw0/memory-card/sdxc-uhs-i-card/6/b/c/sdsqua4-256g-gn6mn-sandisk-original-imagdv34rzuhp9f2.jpeg?q=70"/>
+                                <h3 class="card-product-name">SD Cards</h3>
+                                <p class="card-product-price">From Rs.429</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/monitor/h/8/n/proart-display-pa247cv-professional-full-hd-23-8-90lm03y1-b01310-original-imagg9nc8nv8qb88.jpeg?q=70"/>
+                                <h3 class="card-product-name"> Monitors</h3>
+                                <p class="card-product-price">From Rs.14,999</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70"/>
+                                <h3 class="card-product-name">projectors</h3>
+                                <p class="card-product-price">From Rs.9,999</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/l5jxt3k0/dslr-camera/m/n/a/-original-imagg7hsggshhwbz.jpeg?q=70"/>
+                                <h3 class="card-product-name">Cameras</h3>
+                                <p class="card-product-price">From Rs.78,990</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/pendrive/utility-pendrive/y/3/f/sandisk-blade64-original-imadz5em37gghfkd.jpeg?q=70"/>
+                                <h3 class="card-product-name">Pendrive</h3>
+                                <p class="card-product-price">From Rs.289</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/kr3tj0w0/monitor/j/h/s/se2422h-24-se2422h-dell-original-imag4zaejxdgkv8f.jpeg?q=70"/>
+                                <h3 class="card-product-name">Monitors</h3>
+                                <p class="card-product-price">From Rs.8,279</p>
+                                
+                            </div>
+                        </div>
+                   </div>
+                   <div class="right-part">
+                       <img src="https://rukminim1.flixcart.com/fk-p-flap/530/810/image/1f03e99f6dc9f7a6.jpg?q=20"/>
+
+                   </div>
+                </div>
+                
+                <!--Beauty,toys section-->
+                <div class="bestBeauty-container">
+                    <div class="left-beauty">
+                        <div class="leftpart-top">
+                             <div class="leftpart-top-content">
+                                  <h1>Beauty,Food,Toys & More</h1>
+                             </div> 
+                              <button class="viewall_btn">View all</button>
+                        </div>
+                        <div class="left-card-container">
+                             
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/xif0q/microphone/g/i/w/k8-wireless-collar-mic-for-iphone-ipad-type-c-supported-original-imaghem3sfhgwcez.jpeg?q=70"/>
+                                <h3 class="card-product-name">Microphones</h3>
+                                <p class="card-product-price">Upto 70% off</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=70"/>
+                                <h3 class="card-product-name">Stationery</h3>
+                                <p class="card-product-price">From Rs.49</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/kz5vwy80/helmet/o/4/k/-original-imagb8azfdthjhqr.jpeg?q=70"/>
+                                <h3 class="card-product-name">Rider Helmets</h3>
+                                <p class="card-product-price">From Rs.699</p>
+                                <p class="card-product-disc"></p>
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/k7w8eq80/two-wheeler-tyre/v/y/s/90-90-12-106061-milaze-tl-54j-sw-ceat-original-imafqyx5tnfraaxh.jpeg?q=70"/>
+                                <h3 class="card-product-name">Tyres</h3>
+                                <p class="card-product-price">From Rs.799</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=70"/>
+                                <h3 class="card-product-name">Remotecontrol Cars</h3>
+                                <p class="card-product-price">Upto 80% off</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/krgohow0/learning-toy/1/a/h/mapology-ultimate-indian-combo-india-with-capitals-map-puzzle-original-imag59f2vyh63v9x.jpeg?q=70"/>
+                                <h3 class="card-product-name">Learning Games</h3>
+                                <p class="card-product-price">upto 80% OFF</p>
+                                
+                            </div>
+                            <div class="card-product">
+                                <img src="https://rukminim2.flixcart.com/image/400/400/kdbzqfk0/bar/8/h/q/push-up-bar-0-8-long-ankaro-original-imafu9dmvdk3rzvy.jpeg?q=70"/>
+                                <h3 class="card-product-name">Gym Essentials</h3>
+                                <p class="card-product-price">From rs.139</p>
+                                
+                            </div>
+                        </div>
+                   </div>
+                   
+                </div>
+                <footer>
+                  
+                      <div class="left-panel">
+                         <div>
+                             <div class="footer-title">ABOUT</div>
+                             <div>Contact Us</div>
+                             <div>About Us</div>
+                             <div>Careers </div>
+                             <div>Flipkart Stories</div>
+                             <div>Press</div>
+                             <div>Flipkart Wholesale</div>
+                             <div>Cleartrip</div>
+                             <div>Corporate Information</div>
+                         </div>
+                         <div>
+                            <div class="footer-title">HELP</div>
+                            <div>Payments</div>
+                            <div>Shipping</div>
+                            <div>Cancellation & Returns</div>
+                            <div>FAQ</div>
+                            <div>Report Infringement</div>
+                         </div>
+                         <div>
+                            <div class="footer-title">CONSUMERPOLICY</div>
+                            <div>Return Policy</div>
+                            <div>Terms of Use</div>
+                            <div>Security</div>
+                            <div>Sitemap</div>
+                            <div>Grievance Redressal</div>
+                            <div>EPR Compliance</div>
+                         </div>
+                         <div>
+                             <div class="footer-title">SOCIAL</div>
+                             <div>facebook</div>
+                             <div>Twitter</div>
+                              <div>Youtube</div>
+                         </div>
+                   </div>
+                    <div class="right-panel">
+                        <div>
+                            <div class="footer-title">Mail Us</div>
+                            <samp>
+                                 Flipkart Internet Private Limited,
+                                 Buildings Alyssa, Begonia & 
+                                 Clove Embassy Tech village,
+                                 Outer Ring Road, Devarabeesanahalli Village,
+                                 Bengaluru,560103,
+                                 Karnataka,India
+                            </samp>
+                        </div>
+                        <div>
+                            <div class="footer-title">Registered Office Address</div>
+                            <samp>
+                                 Flipkart Internet Private Limited,
+                                 Bulidings Alyssa, Begonia &
+                                 Colve Embassy Tech Village,
+                                 Outer Ring Road, Devarabeesanahalli Village,
+                                 Bengaluru,560103,
+                                 Karnataka,india 
+                                 CIN:U51109KA2012PTC066107
+                                 Telephone:044-45614700
+
+                            </samp>
+                        </div>
+                  </div>
+                      <div class="footer-end">
+                          <i class="fa-brands fa-facebook"></i>
+                               <h1>Flipkart</h1>
+                      </div>
+                  
+                </footer>
+                <script>
+                    var moon=document.getElementById("moon");
+                    moon.onclick=function(){
+                        document.body.classList.toggle("darktheme");
+                        if(document.body.classList.contains("darktheme")){
+                            moon.i="fa-solid fa-moon";
+                        }else{
+                            moon.i="fa-solid fa-sun";
+                        }
+                    }
+                    window.onload=onloadPage()
+
+                </script>
+                 <script>
+                    let x = document.getElementById('out');
+                    let y = document.getElementById('weather');
+        
+                    function geolocation(){
+                        if(navigator.geolocation){
+                            navigator.geolocation.getCurrentPosition(showPosition)
+                        }else{
+                            x.innerText = "Geo Not Supported"
+                        }
+                    }
+        
+                    function showPosition(data){
+                        console.log(data)
+                        let lat = data.coords.latitude;
+                        let lon = data.coords.longitude;
+                        x.innerText = `Latitude is ${lat} and longitude is ${lon}`
+                        const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+                        //api calling
+                        fetch(url,{method:'GET'})
+                        //return promise
+                        .then((res) =>  res.json())
+                        //resolve the promise
+                        .then((data) => {
+                            console.log(data)
+                            let cityName = data.city.name;
+                            let temp = data.list[0].temp.day+" °C"
+                            y.innerText=`Weather of ${cityName} is ${temp}`
+                        })
+                    }
+                </script>
+      </body>
+</html>
